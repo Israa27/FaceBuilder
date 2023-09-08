@@ -1,5 +1,5 @@
 # FaceBuilder :technologist:
-Welcome to the Face Creation project! In this project, I employ the DOM (Document Object Model) to dynamically create HTML elements, bringing to life a creative platform for assembling faces. This interactive project allows you to craft faces by dragging and dropping facial organs such as eyes, brows, noses, and lips onto a central canvas.
+Welcome to the FaceBuilder project! In this project, I employ the DOM (Document Object Model) to dynamically create HTML elements.This interactive project allows you to craft faces by dragging and dropping facial organs such as eyes, brows, noses, and lips onto a central canvas.
 
 ## Table of Contents
 - [Introduction](#introduction)
