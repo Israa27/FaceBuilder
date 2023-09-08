@@ -30,8 +30,8 @@ This project was built using the following technologies :
 
 - **CSS3**: Applied styles to enhance the visual appearance and layout of the project.
 
-- **JavaScript and DOM**: Utilized JavaScript to dynamically create and manipulate HTML elements using the Document Object Model (DOM). This allowed for interactive features such as drag and drop functionality.
+- **JavaScript and DOM**: Utilized JavaScript to dynamically create and manipulate HTML elements using the Document Object Model (DOM). This allowed for interactive features such as drag-and-drop functionality.
 
 ## Demo
-To view the website, you can visit the live website:[FaceBuilder](https://israa27.github.io/icy-fusion/)
+To view the website, you can visit the live website:[FaceBuilder](https://israa27.github.io/FaceBuilder/)
 
