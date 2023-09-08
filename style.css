@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Rampart+One&display=swap');
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Rampart One', cursive;
+}
+.container{
+            display: grid;
+            grid-template-areas:
+            'header header header header '
+            'lips eyes main-face faces'
+            'moses brows main-face faces';
+            column-gap: 40px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+}
+.container  h1{
+    grid-area: header;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container .main-face{
+width: 200px;
+grid-area: main-face;
+height: 250px;
+position: relative;
+}
+.main-face .brows{
+    position: absolute;
+    width: 112px;
+    top: 72px;
+    left: 44px;
+    background-color: none;
+    height: 22px;
+}
+.main-face .eyes{
+    position: absolute;
+    width: 98px;
+    top: 88px;
+    background-color: none;
+    height: 27px;
+    left: 50px;
+}
+.main-face .nose{   
+   position: absolute;
+    width: 42px;
+    top: 62px;
+    background-color: none;
+    height: 26px;
+    left: 40px;
+}
+.main-face .mouth{
+    position: absolute;
+    width: 63px;
+    top: 140px;
+    background-color: none;
+    height: 43px;
+    left: 68px;
+}
+.container .main-face img{width: 100%;height: 100%;}
+
+.faces{ 
+            display: grid;
+            grid-area: faces;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: stretch;
+            gap: 15px;
+            align-items: baseline;
+}
+.faces .box{
+            width: 100px;
+}
+.eyes{grid-area: eyes;}
+.eyes .box,.brows .box{width: 100px;}
+.brows{grid-area: brows;}
+.lips{grid-area: lips;}
+.lips .box{width: 60px;}
+.noses{grid-area: moses;
+            align-self: flex-start;
+            justify-self: center;}
+.noses .box{width: 40px;}
+.box img{width: 100%;height: 100%;}
