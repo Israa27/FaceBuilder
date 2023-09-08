@@ -1,4 +1,5 @@
 let container=document.querySelector('.container');
+let touchStartX, touchStartY;
 //create divs 
 let itemsArray=['main-face']
 itemsArray.map(item=>{
@@ -6,6 +7,32 @@ itemsArray.map(item=>{
     itemDiv.classList.add(item)
     container.appendChild(itemDiv) 
 })
+
+// Touch events for mobile devices
+container.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+});
+
+container.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+    if (dragItem) {
+        console.log(dragItem)
+        const offsetX = e.touches[0].clientX - touchStartX;
+        const offsetY = e.touches[0].clientY - touchStartY;
+        dragItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    }
+});
+
+container.addEventListener('touchend', function () {
+    if (dragItem) {
+        dragItem.style.transform = '';
+    }
+    dragItem = null;
+});
+
+
 //create main image 
 let mainFaceImage=document.createElement('img')
 mainFaceImage.setAttribute('src','./SVG/Asset 2.svg')

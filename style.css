@@ -94,6 +94,7 @@ position: relative;
             'eyes brows'
             'lips moses';
 }
+.container h1 {font-size: 20px;}
 .noses,.lips{    display: flex;
     justify-content: space-around;
     width: 155px;
