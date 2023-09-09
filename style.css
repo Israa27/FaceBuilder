@@ -6,6 +6,7 @@
             font-family: 'Cairo', sans-serif;
             font-family: 'Rampart One', cursive;
 }
+body{    background-color: #f3f3f3;}
 .container{
             display: grid;
             grid-template-areas:
@@ -28,21 +29,22 @@ grid-area: main-face;
 height: 250px;
 position: relative;
 }
-.main-face .brows{
+.main-face .brow{
     position: absolute;
     width: 112px;
-    top: 72px;
-    left: 44px;
+    top: 35px;
+    left: 22px;
     background-color: none;
     height: 22px;
 }
-.main-face .eyes{
+.main-face .eye{
     position: absolute;
     width: 98px;
-    top: 88px;
+    top: 44px;
     background-color: none;
     height: 27px;
-    left: 50px;
+    left: 25px;
+
 }
 .main-face .nose{   
    position: absolute;
