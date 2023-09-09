@@ -132,15 +132,13 @@ function initializeSortable(containerSelector, itemSelector, onEndCallback) {
         animation: 150, // You can customize the animation duration
         touchStartThreshold: 10, // Customize the touch threshold as needed
         onStart(evt) {
-            // Add any necessary onStart logic
-            // For example, you can change the item's appearance while dragging
+        
             evt.from.querySelectorAll(itemSelector).forEach(item => {
                 item.style.opacity = '0.5';
             });
         },
         onEnd(evt) {
-            // Add any necessary onEnd logic
-            // For example, you can reset the item's appearance after dragging
+          
             evt.from.querySelectorAll(itemSelector).forEach(item => {
                 item.style.opacity = '1';
             });
@@ -150,7 +148,7 @@ function initializeSortable(containerSelector, itemSelector, onEndCallback) {
                 onEndCallback(evt);
             }
         },
-        // Add more options and callbacks as required
+       
     });
 }
 
@@ -223,11 +221,12 @@ function appendEyeToMainFace(evt) {
     }
 }
 
+
 initializeSortable('.eyes', '.box', appendEyeToMainFace);
 initializeSortable('.brows', '.box', appendBrowToMainFace);
 initializeSortable('.noses', '.box', appendNoseToMainFace);
 initializeSortable('.lips', '.box', appendLipToMainFace);
-// Call the initializeSortable function for the faces container
-initializeSortable('.faces', '.box', replaceMainFace); // For the faces container and its items
+initializeSortable('.faces', '.box', replaceMainFace); 
+
 
 }
