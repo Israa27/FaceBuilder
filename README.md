@@ -21,7 +21,7 @@ Facial Organs Drag & Drop is a web application that allows users to create and a
 - The application supports touch devices, allowing users on mobile and tablets to enjoy the same drag-and-drop functionality.
 
 ## Screenshots 
-[hitpaw-1694221253990.webm](https://github.com/Israa27/FaceBuilder/assets/83101136/dc07ab53-e483-4993-b711-3395e646d2a1)
+[Illustrative Video](https://github.com/Israa27/FaceBuilder/assets/83101136/dc07ab53-e483-4993-b711-3395e646d2a1)
 
 ## Technologies Used
 This project was built using the following technologies:
